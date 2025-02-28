@@ -2,6 +2,7 @@ package myMeal;
 
 import java.util.ArrayList;
 
+
 public class Application {
 	ArrayList<Food> foods;
 	ArrayList<Order> orders;
@@ -26,8 +27,13 @@ public class Application {
 			System.out.println("Description: " + food.getFoodDescription());
 			System.out.println("Spicy Level: " + food.getSpicyLevel());
 			System.out.println("Ingredients: ");
+			int i = 1;
 			for (Ingredient ingredient : food.getIngredients()) {
-				System.out.print(ingredient.getIngredient() + ", ");
+				if(i++ != food.getIngredients().size()) {
+					System.out.print(ingredient.getIngredient() + ", ");					
+				} else {
+					System.out.print(ingredient.getIngredient() + ".");
+				}
 			}
 			System.out.println();
 			System.out.println("-------------------------------------------------");
