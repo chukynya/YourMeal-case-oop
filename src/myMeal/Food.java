@@ -7,13 +7,14 @@ public class Food {
 	private String foodDescription;
 	private int spicyLevel;
 	private int kcal;
-	private ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
+	private ArrayList<Ingredient> ingredients;
 
 	public Food(String foodName, String foodDescription, int spicyLevel, int kcal) {
 		this.foodName = foodName;
 		this.foodDescription = foodDescription;
 		this.spicyLevel = spicyLevel;
 		this.kcal = kcal;
+		ingredients = new ArrayList<Ingredient>();
 	}
 
 	public void addIngredient(Ingredient ingredient) {

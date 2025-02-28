@@ -3,9 +3,16 @@ package myMeal;
 import java.util.ArrayList;
 
 public class Application {
-	ArrayList<Food> foods = new ArrayList<Food>();
-	ArrayList<Order> orders = new ArrayList<Order>();
+	ArrayList<Food> foods;
+	ArrayList<Order> orders;
 	
+	
+	
+	public Application() {
+		foods = new ArrayList<Food>();
+		orders = new ArrayList<Order>();
+	}
+
 	public void addNewFood(Food food1) {
 		foods.add(food1);
 		System.out.println(food1.getFoodName() + " was successfully added to the kitchen!");
