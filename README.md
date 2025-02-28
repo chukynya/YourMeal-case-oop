@@ -11,7 +11,7 @@
 - Implementing how to use class relationships using Java (Association, Aggregation, Composition)
 
 # Main Class
-<code>
+```
 public class Main {
     public static void main(String[] args) {
         Application yourMeal = new Application();
@@ -59,11 +59,9 @@ public class Main {
         yourMeal.displayOrders();
     }
 }
-</code>
-
+```
 # Expected Output
-
-<code>
+```
 Bento was successfully added to the kitchen!
 Tokyo Beef Humberg was successfully added to the kitchen!
 Food List:
@@ -99,6 +97,7 @@ User: Kukilo Seto - 9083
 Food: Tokyo Beef Humberg
 Date: 20 February 2025
 ----------------------------------------------------------------------------------------------------
+```
 User: Josh Ronaldo - 0789
 Food: Tokyo Beef Humberg
 Date: 26 February 2025
